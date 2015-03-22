@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ffffff"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="6dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view">
+
+            </View>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dress Me"
+            android:id="@+id/dress_me_button"
+            android:layout_alignRight="@+id/view"
+            android:layout_alignEnd="@+id/view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/view"
+            android:layout_alignBottom="@+id/view"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:background="#b19636"
+            android:elegantTextHeight="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ffffff"
+        android:paddingBottom="6dp">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:background="#ffffff"
+                android:paddingLeft="8dp"
+                android:paddingBottom="2dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="My Wardrobe"
+                    android:textSize="18dp"
+                    android:id="@+id/my_wardrobe_textview"
+                    android:textColor="#767676"
+                    android:textStyle="bold"
+                    android:gravity="bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".9"
+                android:background="#ffffff">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:layout_alignParentTop="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.33"
+                        android:background="#ffffff"
+                        android:paddingBottom="6dp">
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="#b19636"
+                            android:weightSum="1"
+                            android:layout_alignParentBottom="true">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Add Shirt"
+                                   android:textStyle="bold"
+                                   android:textColor="#ffffff"
+                                   android:textIsSelectable="true"
+                                   android:textSize="16dp"
+                                   android:layout_weight="0.7"
+                                   android:layout_gravity="center_vertical"
+                                   android:paddingLeft="12dp"
+                                   android:id="@+id/add_shirt_textview" />
+                                <ImageButton
+                                    android:layout_width="64dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.15"
+                                    android:src="@drawable/ic_action_camera"
+                                    android:background="#b19636"
+                                    android:id="@+id/button_add_shirt" />
+                                <ImageButton
+                                    android:layout_width="64dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.15"
+                                    android:src="@drawable/ic_action_picture"
+                                    android:background="#b19636" />
+                            </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.33"
+                        android:background="#ffffff"
+                        android:paddingBottom="6dp">
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="#b19636"
+                            android:weightSum="1"
+                            android:layout_alignParentBottom="true">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add Pants"
+                                android:textStyle="bold"
+                                android:textColor="#ffffff"
+                                android:textIsSelectable="true"
+                                android:textSize="16dp"
+                                android:layout_weight="0.7"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="12dp"
+                                android:id="@+id/add_pants_textview" />
+                            <ImageButton
+                                android:layout_width="64dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15"
+                                android:src="@drawable/ic_action_camera"
+                                android:background="#b19636" />
+                            <ImageButton
+                                android:layout_width="64dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15"
+                                android:src="@drawable/ic_action_picture"
+                                android:background="#b19636" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.33"
+                        android:background="#ffffff"
+                        android:paddingBottom="6dp">
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="#b19636"
+                            android:weightSum="1"
+                            android:layout_alignParentBottom="true">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add Shoes"
+                                android:textStyle="bold"
+                                android:textColor="#ffffff"
+                                android:textIsSelectable="true"
+                                android:textSize="16dp"
+                                android:layout_weight="0.7"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="12dp"
+                                android:id="@+id/add_shoes_textview" />
+                            <ImageButton
+                                android:layout_width="64dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15"
+                                android:src="@drawable/ic_action_camera"
+                                android:background="#b19636" />
+                            <ImageButton
+                                android:layout_width="64dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15"
+                                android:src="@drawable/ic_action_picture"
+                                android:background="#b19636" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

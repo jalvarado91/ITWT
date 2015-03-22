@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ffffff"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="6dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shirt_red"
+            android:adjustViewBounds="true"
+            android:id="@+id/shirt_image_view"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IF THIS"
+            android:id="@+id/shirt_text_view"
+            android:textSize="16dp"
+            android:textColor="#b19636"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/shirt_image_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ffffff"
+        android:paddingBottom="6dp">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                >
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/blue_pants"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/pants_image_view"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEAR THIS"
+                    android:id="@+id/pants_text_view"
+                    android:textSize="16dp"
+                    android:textColor="#b19636"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="4dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                >
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="6dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:background="#ffffff"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/black_shoes"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/shoes_image_view"
+                            android:paddingBottom="3dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AND THAT"
+                            android:id="@+id/shoes_text_view"
+                            android:textSize="16dp"
+                            android:textColor="#b19636"
+                            android:textStyle="bold"
+                            android:layout_alignTop="@+id/shoes_image_view"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="8dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:background="#ffffff"
+                        >
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="#b19636"
+                            android:text="Roll again"
+                            android:id="@+id/reload_outfit_button"
+                            android:textColor="#ffffff"
+                            android:paddingRight="3dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
